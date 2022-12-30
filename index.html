@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script>
+      let cliente1 = prompt("Digite nome do cliente 1 ");
+      let cliente2 = prompt("Digite nome do cliente 2 ");
+      let cliente3 = prompt("Digite nome do cliente 3 ");
+
+      let valor1 = Number(prompt("Digite o valor par o cliente " + cliente1));
+      let valor2 = Number(prompt("Digite o valor par o cliente " + cliente2));
+      let valor3 = Number(prompt("Digite o valor par o cliente " + cliente3));
+
+      let soma = valor1 + valor2 + valor3;
+      let media = soma / 3;
+      debugger;
+      if (media > 100) {
+        document.write(
+          "Parabens a media obtida foi de " + media + " maior que 100 "
+        );
+      } else if ((media > 50) & (media < 100)) {
+        document.write(
+          "50, media considerada a melhorar o desempenho, nessa caso foi de : " +
+            media
+        );
+      } else if (media > 20 && media < 50) {
+        document.write(
+          "Muito bem ainda dentro de uma media considerada boa, mas precisa melhora pois tem : " +
+            media
+        );
+      } else {
+        document.write(
+          " Pessoal, isso que vcoes querem realmente com essa media de : " +
+            media
+        );
+      }
+    </script>
+  </body>
+</html>
