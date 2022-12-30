@@ -9,16 +9,32 @@
   <body>
     <script>
       let cliente1 = prompt("Digite nome do cliente 1 ");
-      let cliente2 = prompt("Digite nome do cliente 2 ");
-      let cliente3 = prompt("Digite nome do cliente 3 ");
+      var sexo = prompt("Digite sexo cliente 1\nM (Masculino)\nF (Feminino) ");
+      var s_sexo = sexo.trim().toUpperCase() == "M" ? "M" : "F";
+      var sexo_mostra = s_sexo == "M" ? "do" : "da";
+      var valor1 = Number(
+        prompt("Digite o valor " + sexo_mostra + " " + cliente1)
+      );
 
-      let valor1 = Number(prompt("Digite o valor par o cliente " + cliente1));
-      let valor2 = Number(prompt("Digite o valor par o cliente " + cliente2));
-      let valor3 = Number(prompt("Digite o valor par o cliente " + cliente3));
+      let cliente2 = prompt("Digite nome do cliente 2 ");
+      var sexo = prompt("Digite sexo cliente 2\nM (Masculino)\nF (Feminino) ");
+      var s_sexo = sexo.trim().toUpperCase() == "M" ? "M" : "F";
+      var sexo_mostra = s_sexo == "M" ? "do" : "da";
+      let valor2 = Number(
+        prompt("Digite o valor " + sexo_mostra + " " + cliente2)
+      );
+
+      let cliente3 = prompt("Digite nome do cliente 3 ");
+      var sexo = prompt("Digite sexo cliente 3\nM (Masculino)\nF (Feminino) ");
+      var s_sexo = sexo.trim().toUpperCase() == "M" ? "M" : "F";
+      var sexo_mostra = s_sexo == "M" ? "do" : "da";
+      let valor3 = Number(
+        prompt("Digite o valor " + sexo_mostra + " " + cliente3)
+      );
 
       let soma = valor1 + valor2 + valor3;
-      let media = soma / 3;
-      debugger;
+      let media = (soma / 3).toFixed(2);
+
       if (media > 100) {
         document.write(
           "Parabens a media obtida foi de " + media + " maior que 100 "
@@ -35,7 +51,7 @@
         );
       } else {
         document.write(
-          " Pessoal, isso que vcoes querem realmente com essa media de : " +
+          " Pessoal, isso que voces querem realmente com essa media de : " +
             media
         );
       }
